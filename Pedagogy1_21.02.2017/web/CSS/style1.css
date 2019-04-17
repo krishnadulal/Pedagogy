@@ -1,0 +1,235 @@
+/*
+	visit http://web-design-tuts.blogspot.com/ for more quality templates from me
+*/
+/* GENERAL */
+* { margin: 0; padding: 0; }
+
+/* fixex - This is the class name I assign to container element that contains floated child elements, no matter
+				what they are div's ul etc. */
+.fixed:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.fixed{ display:block;}
+/*  \*/
+.fixed{
+    min-height:1%;
+}
+* html .fixed{
+    height:1%;
+}
+.image_width{border:none;width: 65%}
+body
+{
+    background-color:#2d2d2d;
+    color: #000;
+    font: 14px Arial, Verdana, Georgia, "Times New Roman", Times, serif;
+}
+a{ 
+    color: #0000ff;
+    text-decoration: underline;
+}
+img{ border:none; width: 101%;}
+a:hover {  }
+
+/*-------[     ]---------*/
+
+#wrap{
+    width:780px;
+
+    margin:0 auto;
+    border: 1px solid #000; border-top:none; border-bottom:none;
+    padding:0 40px 0 40px;
+
+    background-color:white;
+}
+
+
+/* HEADER*/
+
+#header{ position:relative; height:220px; }
+
+#logo{
+    position:absolute; top:0; left:25px; z-index:99;
+    width:180px; height:140px; background-color:#FFFFFF;
+    border:1px solid #ddd; border-top:none;
+}
+#logo a img{ border:none;}
+#logo h1{ line-height:30px; text-align:center; font-size:38px; margin-top:50px; }
+#logo h1 a { text-decoration:none; color:#111;  letter-spacing:-2px; }
+
+/* main navigation*/	
+#nav ul
+{ 
+    position:absolute; top:10px; right:5px;
+    padding:0;
+    list-style: none;
+}
+#nav li{ display: inline; }
+
+#nav a
+{
+    font-family: Verdana, Arial, Helvetica,Futura, sans-serif;
+    font-size:0.675em;
+    color:black;
+    display: block;
+    float: left;
+    padding:5px 10px 5px 10px;
+    text-transform:uppercase; 
+    text-decoration:none;
+    font-weight:bold;
+}
+#nav a:hover{ text-decoration:underline; }
+#nav .active a{  background-color:#ff0a0a; color:#FFFFFF; }	
+#nav .active a:hover{ text-decoration:none; }
+
+/*The div that contains the large image in the header*/
+#header-img
+{ 
+    position:absolute; top:40px; height:150px; width:770px;
+    border: 1px solid #ddd; border-left:none; border-right:none; padding:5px;
+}
+
+#breadcrumbs{ position:absolute; top:205px; left:8px; font-size:12px;}
+
+
+
+/*MAIN*/
+#main{ padding:7px;}
+
+/* SIDEBAR*/
+#sidebar{
+    float:left;
+    width:190px;
+    padding:20px 5px 0 5px;
+    background-color:#d3dbff;
+
+
+}
+#sidebar p{ margin-bottom:5px; padding:0 20px 0 10px; text-indent:15px; line-height:16px; text-align: justify; }
+
+#sidebar h3{ width:90%; margin:10px auto; border-bottom:1px solid #b9b9b9; text-align:center; font-size:16px; }
+
+#sidebar img{   }
+
+#date-firma p{ margin-top:10px; padding:0 30px 0 15px; font-size:11px; text-indent:0; }
+
+.subnav { width:170px; }
+
+.subnav ul { border-top: 1px solid #ececec; padding: 0; }
+
+.subnav li { margin: 0; border-bottom: 1px solid #ececec; list-style: none; }
+
+.subnav li a 
+{ 
+    display: block;
+    padding: 5px 15px 5px 10px;
+    color:#000;
+    font-size: 1em;
+    text-decoration: none;
+    text-align:left;
+}
+
+.subnav li a:hover 
+{
+    background:/*#595248*/#ff0808 url(img/bg-subnav-hover.gif) no-repeat right center;
+    text-decoration:none; color:#fff;
+}
+
+.subnav a.selected 
+{ 
+    background:#ff0808 url(img/bg-subnav-selected.gif) no-repeat right center;
+    text-decoration:none; color:#fff; font-weight:bold;
+}
+
+
+/*THE PAGES CONTENT*/
+#content
+{ 
+    font-family: Verdana, Arial, Helvetica,sans-serif;
+    width:550px; float:right;
+    padding:10px 5px 0 5px;
+
+}
+#content1
+{
+    width:550px; float:right;
+    padding:10px 5px 0 5px;
+}
+#content_expanded
+{ 
+    width:740px; float:left;
+    padding:10px 5px 0 5px;
+}
+#content h1{
+    margin: 0 0 15px 0; border-bottom: 1px solid #b9b9b9; padding: 0px 0 2px 0px;
+    font: normal 32px "Trebuchete MS", Arial, Helvetica, sans-serif; color: #111;
+    text-indent:15px; letter-spacing:-1px;
+}
+
+#content h2{
+    border-bottom: 1px solid #b9b9b9; margin:0 0 15px 0; text-indent:20px;
+    font:bold 18px "Trebuchete MS", Arial, Helvetica, sans-serif; letter-spacing:-1px;
+}
+#content h2 a{ text-decoration:none;  }
+
+#content p{ 
+    margin: 0 10px 5px 15px;
+    padding: 0;
+    color: #000; line-height: 22px; text-align:justify;
+}
+
+#content ul{
+    font-size: 14px;
+    margin: 10px  15px 10px 35px;
+    padding: 0;
+}
+
+#content ul li{ margin-bottom:10px; }
+
+#content img{ display: block; clear: both; padding: 3px; background: #e5e5e5; }
+
+.imgfloatleft{ float:left; margin:10px; }
+.imgfloatright{ float:right; margin:10px; }
+.notice { border: 1px solid #f2ec49; background: #fffdcb; padding:8px; margin-bottom:15px; overflow:hidden;}
+
+
+
+/* FOOTER */
+#footer{ margin-top:10px; border-top:1px solid #ddd; padding:10px 7px 20px 7px; }
+
+#footer p{ margin-bottom:3px; font-size:12px;}
+#footer p.madeby a{ color:#000; }
+
+/* FORMS */
+fieldset {
+    margin: 0 5px 10px 0px;
+    padding: 2px;
+    border: 1px dotted #ccc;
+    background-color: #fff;
+} 
+legend { background-color:#000000; color:#FFFFFF; text-transform:uppercase; padding:3px; margin-left:10px; }
+form p { margin: 5px 0 0 0; }
+label {  text-align:right; margin-right:10px; display:block; width:140px; float:left; clear:both; font-weight:bold; }
+input.text { width:225px; } 
+textarea { width: 400px; margin: 5px 15px 15px 15px; }  
+
+/* TABLES */
+
+table   { margin-bottom: 15px; }
+th      { border-bottom: 1px solid #ccc; font-weight: bold; }
+tfoot   { font-style: italic; }
+caption { background: #ffc; }
+
+.link {color:blue; text-decoration:underline;}
+.center {text-align:center}
+.b {font-weight:bold}
+
+.newtable {border:0;cellspacing:0;cellpadding:0;text-align:left; line-height:150%; margin-left:20px;}
+.newtable td {width:98px;}
+.style35 { font-size: 20px;
+           color: #FFFFFF;
+           font-weight: bold;
+}
+.style36 { font-size: 18px;
+           color: #0000ff;
+           font-weight: bold;
+}
+.style27 {color: #000000}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>PDFServlet</servlet-name>
+        <servlet-class>pdf.PDFServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PDFServlet</servlet-name>
+        <url-pattern>/PDFServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ObjectivePDF</servlet-name>
+        <servlet-class>pdf.ObjectivePDF</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ObjectivePDF</servlet-name>
+        <url-pattern>/ObjectivePDF</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ReportPDF</servlet-name>
+        <servlet-class>pdf.ReportPDF</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportPDF</servlet-name>
+        <url-pattern>/ReportPDF</url-pattern>
+    </servlet-mapping>
+    ​<servlet>
+        <servlet-name>image_upload_java</servlet-name>
+        <servlet-class>image.image_upload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>image_upload_java</servlet-name>
+        <url-pattern>/image_upload_java</url-pattern>
+    </servlet-mapping>​
+    <context-param>
+        <description>Add Solution</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            /home/pedagogy/pedagogy/Pedagogy1_18.09.13/solution/
+        </param-value>
+    </context-param>   
+    <welcome-file-list>
+        <welcome-file>pedagogy_main.jsp</welcome-file>
+    </welcome-file-list>
+    
+</web-app>

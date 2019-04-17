@@ -1,0 +1,53 @@
+
+.title
+{
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 950px;
+}
+
+.title h1,
+.title h2
+{
+    display: inline;
+    font-size: 20px;
+    color: #565656;
+    text-transform: none;
+}
+
+.title h2
+{
+    color: black
+}
+
+.content
+{
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 950px;
+}
+
+.pane
+{
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 850px;
+    height: 340px;
+    padding: 50px;
+    margin: 0 auto;
+
+}
+
+.pane .long-title
+{
+    position: absolute;
+    top: 15px;
+    text-align: center;
+    width: 850px;
+    overflow: hidden;
+}
+
